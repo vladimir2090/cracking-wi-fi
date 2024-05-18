@@ -12,6 +12,6 @@ try:
             if "Key Contents" in j:
                 pass_wifi += f"{i} -- {j.split(':')[1][1:-1]}\n"
 
-    print(pass_wifi)
+    print(f"Pass: {pass_wifi}")
 except Exception as ex:
     print(f'Error: {ex}')
